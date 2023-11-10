@@ -1,0 +1,16 @@
+<%- include('partials/header'); -%>
+<h1>Home</h1>
+<p><%= homeStartingContent %></p>
+<% posts.forEach(element => { %>
+<a href="/posts/<%=_.kebabCase(element.title)%>" style="color: inherit; text-decoration: none; margin-bottom: 2em;" class="link-text">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%=element.title %></h3>
+    </div>
+    <div class="panel-body">
+      <p class="single-line"><%= element.content %></p>
+    </div>
+  </div>
+</a>
+
+<% }); %> <%- include('partials/footer'); -%>

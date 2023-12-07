@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TAC TOE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="name">mytictactoe.com</div>
+            <button id="music">🔇</button>
+        </nav>
+        <div class="greeting">
+            <h1>Welcome to tic tac toe</h1>
+        </div>
+        <div class="gameContainer">
+            <div class="container">
+                <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
+                <div class="box bt-0"><span class="boxtext"></span></div>
+                <div class="box bt-0 br-0"><span class="boxtext"></span></div>
+                <div class="box bl-0"><span class="boxtext"></span></div>
+                <div class="box"><span class="boxtext"></span></div>
+                <div class="box br-0"><span class="boxtext"></span></div>
+                <div class="box bl-0 bb-0"><span class="boxtext"></span></div>
+                <div class="box bb-0"><span class="boxtext"></span></div>
+                <div class="box bb-0 br-0"><span class="boxtext"></span></div>
+            </div>
+    
+            <div class="gameInfo">
+                <span class="info">Turn for X</span>
+    
+                <div class="imageBox">
+                    <img src="./assets/excited.gif" alt="dancing cat" id="win" class="resultImg">
+                    <img src="./assets/match-perfect.gif" alt="equal opponents" id="draw" class="resultImg">
+                </div>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://github.com/souvik-13"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:souvikk431@gmail.com"><i class="fa-brands fa-google"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/souv1k_13/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/souvik-karmakar-888202257/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="">about us</a></li>
+                    <li><a href="">contact us</a></li>
+                    <li><a href="">our team</a></li>
+                </ul>
+            </div>
+            <div class="footerBottom">
+                <p>copyright &copy; 2023 designed by <span class="designer">Souvik</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

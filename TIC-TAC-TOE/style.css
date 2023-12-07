@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f6f1f1;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #146C94;
+    margin-top: auto;
+}
+
+nav{
+    background-color: #146C94;
+    color: #F6F1F1;
+    height: 2rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+#music{
+    size: 1rem;
+    background-color: #146C94;
+}
+
+#music:hover{
+    cursor: pointer;
+}
+
+
+.greeting{
+    text-align: center;
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: auto;
+    margin: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+
+.box{
+    border: 0.3vw solid black;
+    font-size: 5vw;
+    font-family: 'Darumadrop One', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
+    cursor: pointer;
+    background-color: #AFD3E2;
+}
+
+.gameInfo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageBox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+
+
+
+#reset {
+    font-family: 'Press Start 2P', cursive;
+    padding: 20px;
+    background-color: rgba(255, 165, 0, 0);
+    border-radius: 20px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    outline: none;
+    transition: 0.1s all;
+} 
+
+#reset:hover{
+    background-color: #AFD3E2;
+}
+
+#reset:active {
+    background-color: #19A7CE;
+    transform: translateY(4px);
+}
+
+
+
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    background-color: #F6F1F1;
+    color: #146C94;
+    font-size: 3vw;
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 50%;
+}
+
+.socialIcons a:hover{
+    background-color: #146C94;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: #F6F1F1;
+    transition: 0.5s;
+}
+
+.footernav{
+    margin: 0;
+}
+
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footernav ul li a{
+    color: #F6F1F1;
+    font-size: 20px;
+    margin: 2vw;
+    padding: 2vw;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footernav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #146C94;
+    padding: 2vw;
+    text-align: center;
+}
+
+.designer{
+    /* opacity: 1; */
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+    .footernav ul{
+        flex-direction: column;
+    }
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+}
